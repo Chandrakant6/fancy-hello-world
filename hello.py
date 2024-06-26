@@ -1,9 +1,9 @@
 import time
 
-def hello(s):
-  s = s or 'hello world'
+def hello(s = 'hello world'):
   for i in range(len(s)):
-      l = 'abcdefghijklmnopqrstuvwxyz '
+	  specialChar = '''!@#$%^&*(),./<>?;':"[]{}\|-_=+'''
+      l = '1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ' + specialChar
       for j in l:
           print(s[:i] + j)
           time.sleep(.1) # seconds
