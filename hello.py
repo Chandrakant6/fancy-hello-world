@@ -1,9 +1,9 @@
 import time
+from string import ascii_letters , punctuation
 
 def hello(s = 'hello world'):
 for i in range(len(s)):
-	specialChar = '''!@#$%^&*(),./<>?;':"[]{}\|-_=+'''
-    l = '1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ' + specialChar
+	l = ascii_letters + punctuation
     for j in l:
 		print(s[:i] + j)
 		time.sleep(.1) # seconds
